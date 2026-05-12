@@ -11,13 +11,13 @@ export default function BirthdayWebsite() {
           </h1>
 
           <p className="text-2xl md:text-3xl font-semibold mb-4">
-            To Dyang, My Favorite Human 💖
+            To Dyang, My Paporitt Human 💖
           </p>
 
           <p className="max-w-2xl text-lg md:text-xl leading-relaxed mb-8">
             Today is all about YOU ✨
             <br />
-            Thank you for being chaotic, funny, annoying, supportive, and the best person to share memories with 😭
+            Thank you for being chaotic, funny, supportive, and the best person to share memories with 😭
           </p>
 
           <button
@@ -41,16 +41,16 @@ export default function BirthdayWebsite() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-green-500 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all">
               <h3 className="text-2xl font-bold mb-4">Most Used Word</h3>
-              <p className="text-5xl font-black">“ANJIR”</p>
+              <p className="text-5xl font-black">“ANJAYYY”</p>
             </div>
 
             <div className="bg-pink-500 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all">
               <h3 className="text-2xl font-bold mb-4">Favorite Activity</h3>
-              <p className="text-4xl font-black">NGELUH 😭</p>
+              <p className="text-4xl font-black">Ngopiii 😭</p>
             </div>
 
             <div className="bg-purple-500 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all">
-              <h3 className="text-2xl font-bold mb-4">Chaos Level</h3>
+              <h3 className="text-2xl font-bold mb-4">Sabar Level</h3>
               <p className="text-5xl font-black">999%</p>
             </div>
           </div>
@@ -69,22 +69,22 @@ export default function BirthdayWebsite() {
               {
                 emoji: '🍜',
                 title: 'Makan Bareng',
-                desc: 'Selalu bilang kenyang tapi tetap nambah.'
+                desc: 'Nasgor adalah comfort food nya'
               },
               {
                 emoji: '📱',
-                title: 'Spam Chat',
-                desc: 'Ngirim 80 pesan cuma buat bilang “gpp”.'
+                title: 'Nontonn bolaaa',
+                desc: 'Teacherr aku yang paling sabar ngajarin bola'
               },
               {
                 emoji: '🎤',
                 title: 'Random Moments',
-                desc: 'Ketawa sampai lupa masalah hidup.'
+                desc: 'Paling mengerti asbunkuu'
               },
               {
                 emoji: '🛵',
                 title: 'Pergi Dadakan',
-                desc: '“Gas ga?” lalu 5 menit kemudian udah jalan.'
+                desc: 'Dadakan adalah koenci '
               },
               {
                 emoji: '😭',
@@ -125,11 +125,11 @@ export default function BirthdayWebsite() {
             </p>
 
             <p>
-              Semoga di umur yang baru ini kamu makin bahagia, makin sukses, makin cantik/ganteng, dan semoga hidup kamu dipenuhi banyak hal baik 💖
+              Semoga di umur yang baru ini kamu makin bahagia, makin sukses, dan semoga hidup kamu dipenuhi Keberuntungan 💖
             </p>
 
             <p>
-              Thank you udah selalu ada, selalu jadi tempat cerita, tempat ketawa, tempat panik bareng, dan tempat buat jadi diri sendiri 😭
+              Thank you udah selalu ada, selalu jadi tempat cerita, tempat ketawa, dan tempat buat jadi diri sendiri 😭
             </p>
 
             <p>
@@ -187,7 +187,7 @@ export default function BirthdayWebsite() {
           </p>
 
           <p className="text-xl opacity-80">
-            Made with love, chaos, and sleep deprivation 😭
+            Made with love and Ai wkwkw
           </p>
         </div>
       </footer>
