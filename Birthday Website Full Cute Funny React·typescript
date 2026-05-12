@@ -11,7 +11,7 @@ export default function BirthdayWebsite() {
           </h1>
 
           <p className="text-2xl md:text-3xl font-semibold mb-4">
-            To My Favorite Human 💖
+            To Dyang, My Favorite Human 💖
           </p>
 
           <p className="max-w-2xl text-lg md:text-xl leading-relaxed mb-8">
@@ -61,7 +61,7 @@ export default function BirthdayWebsite() {
       <section id="memories" className="py-24 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-5xl font-black mb-16">
-            Our Chaotic Memories 📸
+            Dyang & Bestie Memories 📸
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -69,17 +69,17 @@ export default function BirthdayWebsite() {
               {
                 emoji: '🍜',
                 title: 'Makan Bareng',
-                desc: 'Selalu bilang kenyang tapi tetap nambah.'
+                desc: 'Selalu Pesennya Nasgorrr'
               },
               {
                 emoji: '📱',
-                title: 'Spam Chat',
-                desc: 'Ngirim 80 pesan cuma buat bilang “gpp”.'
+                title: 'Nonton Bolaaa',
+                desc: 'Ngajarin bolaaa kepadaku yg bahlul ini.'
               },
               {
                 emoji: '🎤',
                 title: 'Random Moments',
-                desc: 'Ketawa sampai lupa masalah hidup.'
+                desc: 'Partner Asbun eprideyyy'
               },
               {
                 emoji: '🛵',
@@ -114,16 +114,16 @@ export default function BirthdayWebsite() {
       <section className="py-24 px-6 bg-white/60 backdrop-blur">
         <div className="max-w-3xl mx-auto bg-white rounded-[40px] shadow-2xl p-10 md:p-16">
           <h2 className="text-5xl font-black mb-10 text-center">
-            A Letter For You 💌
+            A Letter For Dyang 💌
           </h2>
 
           <div className="space-y-6 text-lg leading-relaxed">
             <p>
-              Happy Birthday to the most amazing person everrr 🎂✨
+              Happy Birthday Dyanggg 🎂✨\n            <br />\n            To the most amazing, chaotic, and lovable human ever 😭💖
             </p>
 
             <p>
-              Semoga di umur yang baru ini kamu makin bahagia, makin sukses, makin cantik/ganteng, dan semoga hidup kamu dipenuhi banyak hal baik 💖
+              Semoga di umur yang baru ini kamu makin bahagia, makin sukses, makin cantik, dan semoga hidup kamu dipenuhi keberuntungan 💖
             </p>
 
             <p>
@@ -181,11 +181,11 @@ export default function BirthdayWebsite() {
           </h2>
 
           <p className="text-4xl font-bold text-pink-400 mb-6">
-            HAPPY BIRTHDAY 🎉
+            HAPPY BIRTHDAY DYANG 🎉
           </p>
 
           <p className="text-xl opacity-80">
-            Made with love, chaos, and sleep deprivation 😭
+            Made with love, chaos, and AI wkwkwk 😭
           </p>
         </div>
       </footer>
