@@ -23,6 +23,33 @@
 </head>
 <body class="bg-gradient-to-b from-pink-100 via-purple-100 to-yellow-100 text-gray-800">
 
+<audio autoplay loop>
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const photos = [
+    'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop',
+    'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop'
+  ];
+
+  let current = 0;
+
+  function nextSlide() {
+    const img = document.getElementById('slideImage');
+    current = (current + 1) % photos.length;
+    img.style.opacity = 0;
+
+    setTimeout(() => {
+      img.src = photos[current];
+      img.style.opacity = 1;
+    }, 500);
+  }
+
+  setInterval(nextSlide, 3000);
+</script>
+
   <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
     <div class="absolute top-10 left-10 text-5xl floating">✨</div>
     <div class="absolute bottom-10 right-10 text-5xl floating">💖</div>
@@ -69,10 +96,40 @@
   <section id="gallery" class="py-24 px-6 text-center">
     <h2 class="text-5xl font-black mb-16">Dyang Memories 📸</h2>
 
-    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop" class="rounded-3xl shadow-2xl hover:scale-105 transition" />
-      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop" class="rounded-3xl shadow-2xl hover:scale-105 transition" />
-      <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=1200&auto=format&fit=crop" class="rounded-3xl shadow-2xl hover:scale-105 transition" />
+    <div class="max-w-4xl mx-auto">
+      <div class="relative overflow-hidden rounded-[40px] shadow-2xl">
+        <img
+          id="slideImage"
+          src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop"
+          class="w-full h-[500px] object-cover transition-all duration-700"
+        />
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-10">
+          <p class="text-white text-3xl font-bold">
+            Best Memories With Dyang ✨
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-14">
+      <div class="bg-white rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition-all">
+        <div class="text-6xl mb-4">😭</div>
+        <h3 class="text-2xl font-bold mb-3">Chaos Together</h3>
+        <p>Ketawa sampai lupa masalah hidup.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition-all">
+        <div class="text-6xl mb-4">🍜</div>
+        <h3 class="text-2xl font-bold mb-3">Makan Bareng</h3>
+        <p>Selalu bilang kenyang tapi tetap jajan.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition-all">
+        <div class="text-6xl mb-4">💖</div>
+        <h3 class="text-2xl font-bold mb-3">Best Person Ever</h3>
+        <p>Thank you for existing seriously ✨</p>
+      </div>
     </div>
   </section>
 
