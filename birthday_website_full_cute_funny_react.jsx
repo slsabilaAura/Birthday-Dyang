@@ -1,0 +1,196 @@
+export default function BirthdayWebsite() {
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-pink-100 via-purple-100 to-yellow-100 text-gray-800 overflow-hidden">
+      {/* Hero Section */}
+      <section className="relative flex flex-col items-center justify-center text-center min-h-screen px-6">
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_left,_#ff69b4,_transparent_40%),radial-gradient(circle_at_bottom_right,_#a855f7,_transparent_40%)]"></div>
+
+        <div className="relative z-10">
+          <h1 className="text-6xl md:text-8xl font-black mb-6 animate-bounce">
+            🎉 HAPPY BIRTHDAY 🎂
+          </h1>
+
+          <p className="text-2xl md:text-3xl font-semibold mb-4">
+            To Dyang, My Favorite Human 💖
+          </p>
+
+          <p className="max-w-2xl text-lg md:text-xl leading-relaxed mb-8">
+            Today is all about YOU ✨
+            <br />
+            Thank you for being chaotic, funny, annoying, supportive, and the best person to share memories with 😭
+          </p>
+
+          <button
+            onClick={() => {
+              document.getElementById('memories')?.scrollIntoView({ behavior: 'smooth' })
+            }}
+            className="bg-pink-500 hover:bg-pink-600 text-white px-8 py-4 rounded-full text-xl font-bold shadow-2xl transition-all hover:scale-110"
+          >
+            Open Birthday Surprise 🎁
+          </button>
+        </div>
+      </section>
+
+      {/* Fake Spotify Wrapped */}
+      <section className="py-24 px-6 bg-black text-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-5xl font-black mb-14 text-center">
+            Your 2026 Wrapped 🎧
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-green-500 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all">
+              <h3 className="text-2xl font-bold mb-4">Most Used Word</h3>
+              <p className="text-5xl font-black">“ANJIR”</p>
+            </div>
+
+            <div className="bg-pink-500 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all">
+              <h3 className="text-2xl font-bold mb-4">Favorite Activity</h3>
+              <p className="text-4xl font-black">NGELUH 😭</p>
+            </div>
+
+            <div className="bg-purple-500 rounded-3xl p-8 shadow-2xl hover:scale-105 transition-all">
+              <h3 className="text-2xl font-bold mb-4">Chaos Level</h3>
+              <p className="text-5xl font-black">999%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Memories */}
+      <section id="memories" className="py-24 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-5xl font-black mb-16">
+            Dyang & Bestie Memories 📸
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                emoji: '🍜',
+                title: 'Makan Bareng',
+                desc: 'Selalu bilang kenyang tapi tetap nambah.'
+              },
+              {
+                emoji: '📱',
+                title: 'Spam Chat',
+                desc: 'Ngirim 80 pesan cuma buat bilang “gpp”.'
+              },
+              {
+                emoji: '🎤',
+                title: 'Random Moments',
+                desc: 'Ketawa sampai lupa masalah hidup.'
+              },
+              {
+                emoji: '🛵',
+                title: 'Pergi Dadakan',
+                desc: '“Gas ga?” lalu 5 menit kemudian udah jalan.'
+              },
+              {
+                emoji: '😭',
+                title: 'Curhat Session',
+                desc: 'Tempat paling nyaman buat cerita semuanya.'
+              },
+              {
+                emoji: '✨',
+                title: 'Best Friendship',
+                desc: 'Thank you for existing seriously 💖'
+              }
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="bg-white/70 backdrop-blur rounded-3xl p-8 shadow-xl hover:-translate-y-2 transition-all"
+              >
+                <div className="text-6xl mb-4">{item.emoji}</div>
+                <h3 className="text-2xl font-bold mb-3">{item.title}</h3>
+                <p className="text-lg">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Birthday Letter */}
+      <section className="py-24 px-6 bg-white/60 backdrop-blur">
+        <div className="max-w-3xl mx-auto bg-white rounded-[40px] shadow-2xl p-10 md:p-16">
+          <h2 className="text-5xl font-black mb-10 text-center">
+            A Letter For Dyang 💌
+          </h2>
+
+          <div className="space-y-6 text-lg leading-relaxed">
+            <p>
+              Happy Birthday Dyanggg 🎂✨
+            <br />
+            To the most amazing, chaotic, and lovable human ever 😭💖
+            </p>
+
+            <p>
+              Semoga di umur yang baru ini kamu makin bahagia, makin sukses, makin cantik/ganteng, dan semoga hidup kamu dipenuhi banyak hal baik 💖
+            </p>
+
+            <p>
+              Thank you udah selalu ada, selalu jadi tempat cerita, tempat ketawa, tempat panik bareng, dan tempat buat jadi diri sendiri 😭
+            </p>
+
+            <p>
+              Semoga semua hal yang kamu usahain bisa tercapai satu-satu. Dan kalau someday capek, inget aja masih banyak orang yang sayang sama kamu ✨
+            </p>
+
+            <p className="font-bold text-2xl text-center pt-8">
+              I’m really lucky to know you 🌷
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mini Quiz */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl font-black mb-12">
+            Important Quiz ❓
+          </h2>
+
+          <div className="bg-white rounded-3xl shadow-2xl p-10">
+            <p className="text-3xl font-bold mb-10">
+              Siapa orang paling keren hari ini?
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {['Kamu 😎', 'Tetap Kamu 😭', 'Ya Kamu Lah ✨', 'Obviously You 💖'].map((item, index) => (
+                <button
+                  key={index}
+                  className="bg-gradient-to-r from-pink-400 to-purple-400 hover:scale-105 transition-all text-white text-2xl font-bold py-6 rounded-2xl shadow-xl"
+                >
+                  {item}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="py-16 text-center bg-black text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-10 text-5xl animate-pulse">✨</div>
+          <div className="absolute bottom-10 right-10 text-5xl animate-pulse">🎂</div>
+          <div className="absolute top-1/2 left-1/3 text-4xl animate-bounce">💖</div>
+        </div>
+
+        <div className="relative z-10">
+          <h2 className="text-5xl font-black mb-6">
+            Once Again...
+          </h2>
+
+          <p className="text-4xl font-bold text-pink-400 mb-6">
+            HAPPY BIRTHDAY DYANG 🎉
+          </p>
+
+          <p className="text-xl opacity-80">
+            Made with love, chaos, and sleep deprivation 😭
+          </p>
+        </div>
+      </footer>
+    </div>
+  )
+}
